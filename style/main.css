@@ -824,12 +824,13 @@ input {
 }
 }
 @media screen and (max-device-width: 575px) {
-.skills__grid {
-  display: grid;
-  grid-template-areas: 
-  "one two"
-  "three four";
-} 
+  .skills__grid {
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+  }
 .listening {
   display: block;
 }
@@ -837,9 +838,9 @@ h2 {
   font-size: 30px;
   font-weight: 600;
 }
-.learn {
+/* .learn {
   min-height: 860px;
-}
+} */
 .learn_item {
   flex-direction: column-reverse;
 }
@@ -860,9 +861,6 @@ h2 {
   font-size: 34px;
   max-width: 700px;
   line-height: 1.2;
-}
-.learn__left {
-  max-width: 575px;
 }
 .learn__left-title img {
   display: none;
@@ -948,7 +946,7 @@ h2 {
   max-width: 200px;
 }
 .speaking button {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .writing h3 {
   margin-top: 1px;
@@ -957,7 +955,7 @@ h2 {
   margin-top: -10px;
 }
 .writing button {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 .reading h3 {
   margin-top: 10px;
@@ -966,7 +964,7 @@ h2 {
   margin-top: -10px;
 }
 .reading button {
-  margin-top: 150px;
+  margin-top: 140px;
 }
 .listening h3 {
   margin-top: 5px;
@@ -975,12 +973,12 @@ h2 {
   margin-top: 8px;
 }
 .listening button {
-  margin-top: 151px;
+  margin-top: 140px;
 }
 .about {
   flex-direction: column;
-  margin-top: 60px;
-  height: 650px;
+  /* margin-top: 60px; */
+  /* height: 650px; */
 }
 .about__left-item {
   max-width: 575px;
@@ -1013,7 +1011,7 @@ h2 {
   height: 352px;
   position: absolute;
   margin: 0 auto;
-  margin-top: 2200px;
+  margin-top: 3550px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1037,7 +1035,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 2900px;
+  margin-top: 4250px;
 }
 .pricing_item-1 h3 {
   margin-top: 330px;
@@ -1060,7 +1058,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 3450px;
+  margin-top: 4800px;
 }
 .pricing_item-2 h3 {
   margin-top: 310px;
@@ -1076,7 +1074,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 3920px;
+  margin-top: 5280px;
 }
 .pricing_item-3 h3 {
   margin-top: 310px;
@@ -1115,7 +1113,7 @@ flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 4600px;
+  margin-top: 5980px;
 }
 .contact p {
   font-size: 16px;
@@ -1145,15 +1143,58 @@ input {
   font-size: 13px;
 }
 }
-
-@media screen and (max-device-width: 320px) {
-.skills__grid {
-  grid-template-areas:
-  "one"
-  "two"
-  "three"
-  "four";
+@media screen and (max-device-width: 530px) {
+.about img {
+  margin-top: 3480px;
 }
+.pricing_img-item-1 img {
+  margin-top: 4180px;
+}
+.pricing_img-item-2 img {
+  margin-top: 4740px;
+}
+.pricing_img-item-3 img {
+  margin-top: 5230px;
+}
+.contact img {
+  margin-top: 5890px;
+}
+}
+@media screen and (max-device-width: 445px) {
+.about img {
+  margin-top: 3400px;
+}
+.pricing_img-item-1 img {
+  margin-top: 4120px;
+}
+.pricing_img-item-2 img {
+  margin-top: 4670px;
+}
+.pricing_img-item-3 img {
+  margin-top: 5150px;
+}
+.contact img {
+  margin-top: 5820px;
+}
+}
+@media screen and (max-device-width: 365px) {
+.about img {
+  margin-top: 3340px;
+}
+.pricing_img-item-1 img {
+  margin-top: 4080px;
+}
+.pricing_img-item-2 img {
+  margin-top: 4620px;
+}
+.pricing_img-item-3 img {
+  margin-top: 5130px;
+}
+.contact img {
+  margin-top: 5800px;
+}
+}
+@media screen and (max-device-width: 320px) {
 h2 {
   font-size: 24px;
 }
@@ -1202,7 +1243,7 @@ h2 {
   height: 780px;
 }
 .about img {
-  margin-top: 3400px;
+  margin-top: 3600px;
   width: 283px;
   height: 283px;
 }
@@ -1233,22 +1274,22 @@ h2 {
 .pricing_img-item-1 img {
   width: 248px;
   height: 248px;
-  margin-top: 4280px;
+  margin-top: 4450px;
 }
 .pricing_img-item-2 img {
   width: 257px;
   height: 197px;
-  margin-top: 4800px;
+  margin-top: 5050px;
 }
 .pricing_img-item-3 img {
   width: 241px;
   height: 241px;
-  margin-top: 5300px;
+  margin-top: 5510px;
 }
 .contact img {
   width: 253px;
   height: 228px;
-  margin-top: 5950px;
+  margin-top: 6170px;
 }
 .contact h2 {
   font-size: 24px;
