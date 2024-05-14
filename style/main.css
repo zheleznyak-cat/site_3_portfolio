@@ -38,6 +38,9 @@ span {
   display: flex;
   justify-content: space-between;
 }
+.mob a {
+  display: none;
+}
 .menu ul {
   max-width: 600px;
   list-style-type: none;
@@ -626,6 +629,9 @@ h2 {
 }
 p {
   font-size: 16px;
+}
+.pc a {
+  display: none;
 }
 .dropimg {
   display: inline;
