@@ -278,6 +278,9 @@ h2 {
   margin-top: 10px;
 }
 /* About */
+.about__view2 {
+  display: none;
+}
 .about {
   display: flex;
   justify-content: space-between;
@@ -321,6 +324,9 @@ h2 {
   text-align: left;
 }
 /* Pricing */
+.pricing__view2 {
+  display: none;
+}
 .pricing h2 {
   font-size: 48px;
   line-height: 80px;
@@ -364,6 +370,9 @@ h2 {
 }
 
 /* Contact */
+.contact_view2 {
+  display: none;
+}
 .contact {
   display: flex;
   justify-content: space-between;
@@ -824,13 +833,13 @@ input {
 }
 }
 @media screen and (max-device-width: 575px) {
-  .skills__grid {
-    grid-template-areas:
-    "one"
-    "two"
-    "three"
-    "four";
-  }
+.skills__grid {
+  grid-template-areas:
+  "one"
+  "two"
+  "three"
+  "four";
+}
 .listening {
   display: block;
 }
@@ -838,9 +847,6 @@ h2 {
   font-size: 30px;
   font-weight: 600;
 }
-/* .learn {
-  min-height: 860px;
-} */
 .learn_item {
   flex-direction: column-reverse;
 }
@@ -975,10 +981,12 @@ h2 {
 .listening button {
   margin-top: 140px;
 }
-.about {
-  flex-direction: column;
-  /* margin-top: 60px; */
-  /* height: 650px; */
+.about__view1 {
+  display: none;
+}
+.about__view2 {
+  display: block;
+  text-align: center;
 }
 .about__left-item {
   max-width: 575px;
@@ -994,7 +1002,6 @@ h2 {
 .about__left p {
   font-size: 14px;
   margin: 0 auto;
-  margin-top: 400px;
   text-align: center;
 }
 .about__left-item p {
@@ -1003,42 +1010,30 @@ h2 {
 .about__left-item h3 {
   font-size: 24px;
 }
-.about__right {
-  text-align: center;
-}
 .about img {
-  width: 352px;
-  height: 352px;
-  position: absolute;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  margin-top: 3550px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.pricing__view1 {
+  display: none;
+}
+.pricing__view2 {
+  display: block;
 }
 .pricing_img-item,
 .pricing_item {
   flex-direction: column;
   text-align: center;
 }
-.pricing h2 {
-  margin-top: 80px;
-}
-.pricing {
-  margin-top: 80px;
-}
 .pricing_img-item-1 img {
-  width: 291px;
-  height: 291px;
-  position: absolute;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 4250px;
 }
-.pricing_item-1 h3 {
-  margin-top: 330px;
+.pricing_item-1 {
+  margin: 0 auto;
+  align-items: center;
 }
 .pricing_item br {
   display: none;
@@ -1047,40 +1042,19 @@ h2 {
   max-width: 400px;
   margin: 0 auto;
 }
-.pricing_item-1 button {
-  margin-top: -60px;
+.pricing_img-item-2,
+.pricing_img-item-3 {
+  margin-top: 50px;
 }
 .pricing_img-item-2 img {
-  width: 314px;
-  height: 241px;
-  position: absolute;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 4800px;
-}
-.pricing_item-2 h3 {
-  margin-top: 310px;
-}
-.pricing_item-2 button {
-  margin-top: -80px;
 }
 .pricing_img-item-3 img {
-  width: 253px;
-  height: 253px;
-  position: absolute;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 5280px;
-}
-.pricing_item-3 h3 {
-  margin-top: 310px;
-}
-.pricing_item-3 button {
-  margin-top: -80px;
 }
 .pricing_item h3 {
   font-size: 24px;
@@ -1094,31 +1068,32 @@ h2 {
 pricing_item span {
   font-size: 16px;
 }
-.pricing_item-1 {
-  margin-top: -100px;
+.contact_view1 {
+  display: none;
+}
+.contact_view2 {
+  display: block;
 }
 .contact {
 flex-direction: column;
+}
+.contact_right {
+  display: block;
+  text-align: center;
 }
 .contact h2 {
   margin-top: 80px;
   text-align: center;
 }
 .contact img {
-  width: 358px;
-  height: 322px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 5980px;
+  position: static;
 }
 .contact p {
   font-size: 16px;
   text-align: center;
-  margin-top: 380px;
 }
 .contact_right-form form {
   width: 511px;
@@ -1141,57 +1116,6 @@ input {
 }
 .footer h4 {
   font-size: 13px;
-}
-}
-@media screen and (max-device-width: 530px) {
-.about img {
-  margin-top: 3480px;
-}
-.pricing_img-item-1 img {
-  margin-top: 4180px;
-}
-.pricing_img-item-2 img {
-  margin-top: 4740px;
-}
-.pricing_img-item-3 img {
-  margin-top: 5230px;
-}
-.contact img {
-  margin-top: 5890px;
-}
-}
-@media screen and (max-device-width: 445px) {
-.about img {
-  margin-top: 3400px;
-}
-.pricing_img-item-1 img {
-  margin-top: 4120px;
-}
-.pricing_img-item-2 img {
-  margin-top: 4670px;
-}
-.pricing_img-item-3 img {
-  margin-top: 5150px;
-}
-.contact img {
-  margin-top: 5820px;
-}
-}
-@media screen and (max-device-width: 365px) {
-.about img {
-  margin-top: 3340px;
-}
-.pricing_img-item-1 img {
-  margin-top: 4080px;
-}
-.pricing_img-item-2 img {
-  margin-top: 4620px;
-}
-.pricing_img-item-3 img {
-  margin-top: 5130px;
-}
-.contact img {
-  margin-top: 5800px;
 }
 }
 @media screen and (max-device-width: 320px) {
@@ -1239,13 +1163,13 @@ h2 {
   height: 634px;
   margin-top: 15px;
 }
-.about {
-  height: 780px;
+.about__left {
+  margin-top: -50px;
 }
 .about img {
-  margin-top: 3600px;
-  width: 283px;
-  height: 283px;
+  /* margin-top: 3600px; */
+  width: 100%;
+  height: auto;
 }
 .about__left h2 {
   font-size: 24px;
@@ -1256,53 +1180,21 @@ h2 {
 .about__left-item {
   flex-direction: column;
 }
-.pricing_item-1 h2 {
-  font-size: 24px;
-}
-.pricing_item-1 h2 {
-  font-size: 18px;
-}
-.pricing_item p {
-  font-size: 13px;
-}
-.pricing_item button {
-  font-size: 18px;
-}
-.pricing_item button span {
-  font-size: 14px;
-}
-.pricing_img-item-1 img {
-  width: 248px;
-  height: 248px;
-  margin-top: 4450px;
-}
-.pricing_img-item-2 img {
-  width: 257px;
-  height: 197px;
-  margin-top: 5050px;
-}
-.pricing_img-item-3 img {
-  width: 241px;
-  height: 241px;
-  margin-top: 5510px;
-}
 .contact img {
   width: 253px;
   height: 228px;
-  margin-top: 6170px;
 }
 .contact h2 {
   font-size: 24px;
 }
 .contact p {
   font-size: 14px;
-  margin-top: 300px;
 }
 .contact_right-form {
   flex-direction: column;
 }
 .contact form {
-  width: 290px;
+  width: 240px;
   height: 50px;
   margin: 0 auto;
   display: flex;
@@ -1312,7 +1204,7 @@ h2 {
 input {
   padding: 0;
   margin: 0;
-  margin-left: -120px;
+  margin-left: -50px;
   width: 150px;
 }
 .contact button {
@@ -1325,7 +1217,6 @@ input {
   font-size: 14px;
   margin-top: 15px;
 }
-
 .line {
   margin-top: 60px;
 }
