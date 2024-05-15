@@ -958,7 +958,7 @@ h2 {
   max-width: 200px;
 }
 .speaking button {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .writing h3 {
   margin-top: 1px;
@@ -1071,7 +1071,7 @@ h2 {
 .pricing_item button {
   font-size: 22px;
 }
-pricing_item span {
+.pricing_item span {
   font-size: 16px;
 }
 .contact_view1 {
